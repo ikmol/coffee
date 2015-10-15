@@ -1,5 +1,5 @@
 static_in_pro/static_root/*.*
-
+!static.txt
 
 
 # Byte-compiled / optimized / DLL files
