@@ -1,0 +1,152 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+          <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="">
+
+        <title>Coffee</title>
+
+        {% include "loadcss.html" %}
+
+    </head>
+
+<body>
+    <header id="header">
+        {% include "navbar.html" %}
+
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
+                        <img src="{% static "img/logo.png" %}" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container form">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+                <div class="sendform col-md-12">
+                        <span><h1>Доставка меленої кави та кави в зернах</h1></span>
+                        <form class="form-inline">
+                            <div class="form-group col-sm-6 col-xs-6">
+                                <label class="sr-only" for="name">Ім’я</label>
+                                <input type="text" class="form-control" id="name" placeholder="Ім’я">
+                            </div>
+                            <div class="form-group col-sm-6 col-xs-6">
+                                <label class="sr-only" for="phone">Телефон</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Телефон">
+                            </div>
+                        </form>
+                        <div class="formcontent">
+                            <div class="col-sm-6 col-xs-6">
+                                <button type="submit" class="btn">Замовити</button>
+                            </div>
+
+                            <div class="tel col-sm-6 col-xs-6">
+                                <span>aбо телефонуй</span>
+                                <a href=""><i class="fa fa-phone fa-1x"></i>088 123 55 88</a>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="welcome">
+        <span id="welcome" style="position: relative; top: -135px; padding: 0; margin: 0;"></span>
+         <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h3>Діма Радзевич і компанія <br>запрошуємо</h3>
+                    <p>
+                        Ми не можемо продати вам щастя. Але в нас є смачна кава і зігріваючий душу чай. А це практично те саме! Приходьте до нас, ми поділимось приємними емоціями ^_^
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="{% static "img/welcome_img1.jpg" %}">
+                </div>
+                <div class="col-md-3">
+                    <img src="{% static "img/welcome_img2.jpg" %}">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="takewithyou">
+        <span id="takewithyou" style="position: relative; top: -20px; padding: 0; margin: 0;"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-7">
+                    <div class="cup_shad">
+                        <h2>Візьми з собою:</h2>
+                        <ul>
+                            <li><i class="my my_a"></i>еспресо</li>
+                            <li><i class="my my_a"></i>американо</li>
+                            <li><i class="my my_a"></i>лате</li>
+                            <li><i class="my my_a"></i>горячий шоколад</li>
+                            <li><i class="my my_a"></i>капучіно</li>
+                            <li><i class="my my_a"></i>какао</li>
+                            <li><i class="my my_a"></i>ароматний чай</li>
+                            <li><i class="my my_a"></i>вдалі жарти тазаряд<br>позитивної енергії</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <span id="gallery" style="position: relative; top: -20px; padding: 0; margin: 0;"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Наші смаколики</h1>
+                    <div id="smak" class="owl-carousel">
+                        <div class="item"><img src="{% static "img/img1.jpg" %}"></div>
+                        <div class="item"><img src="{% static "img/img2.jpg" %}"></div>
+                        <div class="item"><img src="{% static "img/img3.jpg" %}"></div>
+                        <div class="item"><img src="{% static "img/img2.jpg" %}"></div>
+                        <div class="item"><img src="{% static "img/img1.jpg" %}"></div>
+                        <div class="item"><img src="{% static "img/img2.jpg" %}"></div>
+                        <div class="item"><img src="{% static "img/img3.jpg" %}"></div>
+                        <div class="item"><img src="{% static "img/img2.jpg" %}"></div>
+                        <div class="item"><img src="{% static "img/img1.jpg" %}"></div>
+                        <div class="item"><img src="{% static "img/img3.jpg" %}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="coffeebook">
+        <span id="coffeebook" style="position: relative; top: 0px; padding: 0; margin: 0;"></span>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="shelf">
+                        <h1>Кава + книга</h1>
+                        <div class="col-md-4 col-md-offset-4">
+                            <p>Перші книжки вже в кав"ярні. Приходьте, обмінюймося прочитаними книжками, давайте разом робити свій світ цікавішим ^_^</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+{% include "loadjs.html" %}
+</body>
+</html>
