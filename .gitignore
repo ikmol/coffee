@@ -1,5 +1,5 @@
-static_root/
-media_static/
+static_root
+media_static
 
 
 # Byte-compiled / optimized / DLL files
