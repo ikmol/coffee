@@ -1,9 +1,52 @@
 @font-face {
-	font-family: "RobotoRegular";
-	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
-			 url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
-			 url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
+    font-family: 'MuseoSansCyrl100';
+    src: url('/static/fonts/MuseoSansCyrl100/MuseoSansCyrl-100.eot');
+    src: url('/static/fonts/MuseoSansCyrl100/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/MuseoSansCyrl100/MuseoSansCyrl-100.woff') format('woff'),
+         url('/static/fonts/MuseoSansCyrl100/MuseoSansCyrl-100.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'MuseoSansCyrl300';
+    src: url('/static/fonts/MuseoSansCyrl300/MuseoSansCyrl-300.eot');
+    src: url('/static/fonts/MuseoSansCyrl300/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/MuseoSansCyrl300/MuseoSansCyrl-300.woff') format('woff'),
+         url('/static/fonts/MuseoSansCyrl300/MuseoSansCyrl-300.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl500';
+    src: url('/static/fonts/MuseoSansCyrl500/MuseoSansCyrl-500.eot');
+    src: url('/static/fonts/MuseoSansCyrl500/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/MuseoSansCyrl500/MuseoSansCyrl-500.woff') format('woff'),
+         url('/static/fonts/MuseoSansCyrl500/MuseoSansCyrl-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl700';
+    src: url('/static/fonts/MuseoSansCyrl700/MuseoSansCyrl-700.eot');
+    src: url('/static/fonts/MuseoSansCyrl700/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/MuseoSansCyrl700/MuseoSansCyrl-700.woff') format('woff'),
+         url('/static/fonts/MuseoSansCyrl700/MuseoSansCyrl-700.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'MuseoSansCyrl900';
+    src: url('/static/fonts/MuseoSansCyrl900/MuseoSansCyrl-900.eot');
+    src: url('/static/fonts/MuseoSansCyrl900/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/MuseoSansCyrl900/MuseoSansCyrl-900.woff') format('woff'),
+         url('/static/fonts/MuseoSansCyrl900/MuseoSansCyrl-900.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }

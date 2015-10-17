@@ -19,6 +19,7 @@
     </head>
 
 <body>
+
     <header id="header">
         {% include "navbar.html" %}
 
@@ -31,10 +32,11 @@
                 </div>
             </div>
         </div>
-        <div class="container form">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
-                <div class="sendform col-md-12">
+        <div class="tobottom">
+        <div class="">
+            <div class="">
+                <div class="">
+                <div class="sendform">
                         <span><h1>Доставка меленої кави та кави в зернах</h1></span>
                         <form class="form-inline">
                             <div class="form-group col-sm-6 col-xs-6">
@@ -57,8 +59,9 @@
                             </div>
                         </div>
                 </div>
-                </div>
             </div>
+        </div>
+        </div>
         </div>
 
     </header>
@@ -67,17 +70,17 @@
         <span id="welcome" style="position: relative; top: -135px; padding: 0; margin: 0;"></span>
          <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-6 col-sm-12 col-xs-12">
                     <h3>Діма Радзевич і компанія <br>запрошуємо</h3>
                     <p>
-                        Ми не можемо продати вам щастя. Але в нас є смачна кава і зігріваючий душу чай. А це практично те саме! Приходьте до нас, ми поділимось приємними емоціями ^_^
+                        Ми не можемо продати вам щастя.<br>Але в нас є смачна кава і зігріваючий душу чай. А це практично те саме! Приходьте до нас, ми поділимось приємними емоціями ^_^
                     </p>
                 </div>
-                <div class="col-md-3">
-                    <img src="{% static "img/welcome_img1.jpg" %}">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <img src="{% static "img/welcome_img1.jpg" %}" class="img-responsive">
                 </div>
-                <div class="col-md-3">
-                    <img src="{% static "img/welcome_img2.jpg" %}">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <img src="{% static "img/welcome_img2.jpg" %}" class="img-responsive">
                 </div>
             </div>
         </div>
@@ -88,18 +91,18 @@
         <span id="takewithyou" style="position: relative; top: -20px; padding: 0; margin: 0;"></span>
         <div class="container">
             <div class="row">
-                <div class="col-md-5 col-md-offset-7">
+                <div class="col-md-5 col-md-offset-7 col-sm-5 col-sm-offset-7 col-xs-6 col-xs-offset-3">
                     <div class="cup_shad">
-                        <h2>Візьми з собою:</h2>
+                        <h1>Візьми з собою:</h1>
                         <ul>
-                            <li><i class="my my_a"></i>еспресо</li>
-                            <li><i class="my my_a"></i>американо</li>
-                            <li><i class="my my_a"></i>лате</li>
-                            <li><i class="my my_a"></i>горячий шоколад</li>
-                            <li><i class="my my_a"></i>капучіно</li>
-                            <li><i class="my my_a"></i>какао</li>
-                            <li><i class="my my_a"></i>ароматний чай</li>
-                            <li><i class="my my_a"></i>вдалі жарти тазаряд<br>позитивної енергії</li>
+                            <li><i class="my my_i"></i>еспресо</li>
+                            <li><i class="my my_i"></i>американо</li>
+                            <li><i class="my my_i"></i>лате</li>
+                            <li><i class="my my_i"></i>горячий шоколад</li>
+                            <li><i class="my my_i"></i>капучіно</li>
+                            <li><i class="my my_i"></i>какао</li>
+                            <li><i class="my my_i"></i>ароматний чай</li>
+                            <li><i class="my my_i"></i>вдалі жарти та заряд<br>позитивної енергії</li>
                         </ul>
                     </div>
                 </div>
@@ -110,19 +113,19 @@
         <span id="gallery" style="position: relative; top: -20px; padding: 0; margin: 0;"></span>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                     <h1>Наші смаколики</h1>
                     <div id="smak" class="owl-carousel">
-                        <div class="item"><img src="{% static "img/img1.jpg" %}"></div>
-                        <div class="item"><img src="{% static "img/img2.jpg" %}"></div>
-                        <div class="item"><img src="{% static "img/img3.jpg" %}"></div>
-                        <div class="item"><img src="{% static "img/img2.jpg" %}"></div>
-                        <div class="item"><img src="{% static "img/img1.jpg" %}"></div>
-                        <div class="item"><img src="{% static "img/img2.jpg" %}"></div>
-                        <div class="item"><img src="{% static "img/img3.jpg" %}"></div>
-                        <div class="item"><img src="{% static "img/img2.jpg" %}"></div>
-                        <div class="item"><img src="{% static "img/img1.jpg" %}"></div>
-                        <div class="item"><img src="{% static "img/img3.jpg" %}"></div>
+                        <div class="item"><img src="{% static "img/img1.jpg" %}" class="img-responsive"></div>
+                        <div class="item"><img src="{% static "img/img2.jpg" %}" class="img-responsive"></div>
+                        <div class="item"><img src="{% static "img/img3.jpg" %}" class="img-responsive"></div>
+                        <div class="item"><img src="{% static "img/img2.jpg" %}" class="img-responsive"></div>
+                        <div class="item"><img src="{% static "img/img1.jpg" %}" class="img-responsive"></div>
+                        <div class="item"><img src="{% static "img/img2.jpg" %}" class="img-responsive"></div>
+                        <div class="item"><img src="{% static "img/img3.jpg" %}" class="img-responsive"></div>
+                        <div class="item"><img src="{% static "img/img2.jpg" %}" class="img-responsive"></div>
+                        <div class="item"><img src="{% static "img/img1.jpg" %}" class="img-responsive"></div>
+                        <div class="item"><img src="{% static "img/img3.jpg" %}" class="img-responsive"></div>
                     </div>
                 </div>
             </div>
@@ -131,18 +134,75 @@
 
     <section class="coffeebook">
         <span id="coffeebook" style="position: relative; top: 0px; padding: 0; margin: 0;"></span>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 cl-sm-12">
                     <div class="shelf">
+                        <img src="{% static "img/shelf.png" %}" class="img-responsive">
                         <h1>Кава + книга</h1>
-                        <div class="col-md-4 col-md-offset-4">
-                            <p>Перші книжки вже в кав"ярні. Приходьте, обмінюймося прочитаними книжками, давайте разом робити свій світ цікавішим ^_^</p>
+                        <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
+                            <p id="mainnews">Перші книжки вже в кав"ярні. Приходьте, обмінюймося прочитаними книжками, давайте разом робити свій світ цікавішим ^_^</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="container postbook">
+            <div class="row">
+                <div id="blocknews1" class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="infoblock">
+                        <span>Кава + книга1</span>
+                        <p id="news1">
+                            Перші книжки вже в кав"ярні. Приходьте, обмінюймося прочитаними книжками, давайте разом робити свій світ цікавішим ^_^
+                        </p>
+                    </div>
+                </div>
+                <div id="blocknews2" class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="infoblock">
+                        <span>Вагова кава</span>
+                        <p id="news2">
+                            Для всіх поціновувачів смачної кави у великому горнятку звареної власноруч. Мобільна кав"ярня пропонує вагову каву у зернах та змелену під будь який спосіб приготування. 100 грам коштує 25 гривень Наповніть свій дім ароматом фреш -кави.
+                        </p>
+                    </div>
+                </div>
+                <div id="blocknews3" class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="infoblock">
+                        <span>Імунний чай з імбирем </span>
+                        <p id="news3">
+                            Осінь настала холодно стало... Спробуйте смачний імунний чай з імбирем , лимоном та журавлиною . Смакота!!! Гріємо руки та насолоджуємося осінню.
+                        </p>
+                    </div>
+                </div>
+                <div id="blocknews4" class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="infoblock">
+                        <span>Кава Алах-Бабах</span>
+                        <p id="news4">
+                            Смачна подія від Good Mood Coffe!! Кава Алах-Бабах за оригінальним східним рецептом з дрібкою любові та приворотним зіллям. Смакуйте та діліться враженнями!!!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cups">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                     <img src="{% static "img/coffee_cups.png" %}" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Завітай до нас і отримай<br> найсмачнішу каву і приємні емоції</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
 
     </section>
 

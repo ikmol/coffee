@@ -1,6 +1,7 @@
 static_in_pro/static_root/*.*
 !static.txt
-
+local.py
+settings_old.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

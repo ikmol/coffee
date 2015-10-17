@@ -1,0 +1,329 @@
+body{
+	font-size: 16px;
+	line-height: 1.6;
+	font-family: "museo_sans_cyrl300", sans-serif;
+}
+
+/* header section */
+header{
+	background: url("/static/img/head_bg.jpg") no-repeat;
+	background-position: top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 640px;
+	padding-top: 45px;
+	position: relative;
+}
+
+header > .container{
+    padding: 0 !important;
+}
+header .form{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar-default{
+    /*background: transparent none repeat;*/
+    background: rgba(0, 0, 0, .3);
+    border: none;
+    box-shadow: none;
+	font-family: "museo_sans_cyrl300", sans-serif;
+	font-weight: 300;
+}
+.navbar-default .navbar-nav>li>a{
+    /*margin: 0 6px;*/
+    line-height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #7b6550;
+    text-shadow: none !important;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav>li>a>i{
+    font-size: 36px;
+    line-height: 14px;
+	color: #7b6550;
+}
+.navbar-default .navbar-nav>li>a>i:hover{
+	color: #ffffff;
+}
+
+
+.navbar-toggle{
+    border-radius: 0 !important;
+}
+
+.navbar-default .navbar-toggle{
+    color: #FFFFFF !important;
+}
+.navbar-default .navbar-toggle:hover{
+    background-color: #8f735a !important;
+    border: none !important;
+}
+.navbar-default .navbar-toggle:focus{
+	background-color: transparent !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+}
+.logo{
+	padding-top: 220px;
+}
+
+
+.sendform{
+    color: #FFFFFF;
+    height: 180px;
+    display: block;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.sendform h1{
+
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 15px;
+	font-family: "museo_sans_cyrl300", sans-serif;
+	font-weight: 300;
+}
+.sendform > span{
+    display: inline-block;
+    background: #8f735a;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    line-height: 40px;
+}
+
+.sendform .form-inline .form-control{
+    width: 100%;
+    border-radius: 0;
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px #8f735a;
+    color: #FFFFFF;
+    opacity: 1;
+    box-shadow: none !important;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.sendform .form-inline .form-control:focus{
+    border-bottom: solid 1px #FFFFFF;
+}
+.sendform .form-inline .form-control::-webkit-input-placeholder {color:#8f735a;}
+.sendform .form-inline .form-control::-moz-placeholder          {color:#8f735a;}/* Firefox 19+ */
+.sendform .form-inline .form-control:-moz-placeholder           {color:#8f735a;}/* Firefox 18- */
+.sendform .form-inline .form-control:-ms-input-placeholder      {color:#8f735a;}
+
+
+.sendform .form-inline .form-group,
+.sendform .formcontent > div{
+    padding: 15px;
+}
+.sendform .formcontent button{
+    background: transparent;
+    border: solid 1px #FFFFFF;
+    text-transform: uppercase;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0;
+    line-height: 40px;
+}
+.sendform .formcontent button:hover{
+    background: #8f735a;
+    border: none;
+    color: #FFFFFF;
+}
+
+.sendform .formcontent .tel > span{
+    display: block;
+    font-size: 11px;
+    color: #8f735a;
+}
+.sendform .formcontent .tel a > i {
+    position: absolute;
+    top: 30px;
+    left: 55px;
+    font-size: 28px;
+}
+
+.sendform .formcontent .tel > a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+/* section welcome*/
+.welcome{
+	min-height: 515px;
+	text-align: center;
+	padding-top: 75px;
+}
+
+.welcome h3{
+	font-size: 30px;
+	font-weight: bold;
+}
+.welcome p{
+	font-size: 30px;
+	font-weight: 100;
+}
+.welcome img{
+	width: 303px;
+	height: 342px;
+	padding-right: 25px;
+}
+ /*section takewithyou*/
+.takewithyou{
+	background: url("/static/img/takewithyou.jpg") no-repeat;
+	background-position: bottom center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 769px;
+
+	font-size: 26px;
+}
+.takewithyou h2{
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+.takewithyou ul{
+	margin: 0;
+	padding: 48px 0;
+}
+.takewithyou .cup_shad{
+	padding-top: 13px;
+}
+.takewithyou li{
+	font-weight: 100;
+	list-style: none;
+	line-height: 40px;
+	position: relative;
+	padding-left: 60px;
+	padding-bottom: 20px;
+}
+.cup_shad i{
+	font-size: 32px;
+	line-height: 45px;
+	color: #693c1d;
+	position: absolute;
+	left: 0;
+}
+
+/* section smakolyki*/
+.gallery{
+	text-align: center;
+	padding-bottom: 60px;
+}
+.gallery h1{
+	font-size: 30px;
+	text-transform: uppercase;
+	padding: 30px 0 35px 0;
+}
+
+#owl-demo .item{
+  display: block;
+  padding: 0 15px 0 15px;
+
+}
+#owl-demo .item img{
+  display: block;
+  width: 350px;
+  height: 350px;
+}
+
+.owl-theme .owl-buttons i{
+  	margin-top: 2px;
+	color: black;
+}
+
+/*To move navigation buttons outside use these settings:*/
+.owl-theme .owl-controls{
+	margin: 0;
+	padding-top: 20px;
+
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+	position: absolute;
+	opacity: 1;
+	background-color: #FFFFFF;
+	padding: 5px 9px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+	left: -65px;
+	top: 150px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next{
+	right: -65px;
+	top: 150px;
+}
+.owl-theme .owl-controls .owl-page.active span{
+	background-color: #693c1d;
+}
+.owl-theme .owl-controls .owl-page span{
+	background-color: #693c1d;
+	zoom: 1.3;
+}
+
+
+/* section coffe book */
+.coffeebook{
+	background: url("/static/img/coffeebook_bg.jpg") no-repeat;
+	background-position: top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 770px;
+	font-size: 26px;
+
+
+}
+
+.coffeebook .shelf{
+	background: url("/static/img/shelf.png") no-repeat;
+	background-position: center;
+
+	position: relative;
+	z-index: 10;
+	min-height: 214px;
+	text-align: center;
+	top: 75px;
+	margin: 0;
+	padding: 0;
+}
+.coffeebook .shelf h1{
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #8f735a;
+}
+.coffeebook .shelf > div{
+	padding-top: 30px;
+}
+.coffeebook .shelf p{
+	display: inline-block;
+	color: #FFFFFF;
+	font-size: 24px;
+}
