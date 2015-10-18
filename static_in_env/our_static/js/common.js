@@ -46,10 +46,11 @@ $(window).resize(function(){
 function wResize(){
     $("header").css("height", $(window).height());
     $(".tobottom").css("left", ($(window).width()/2) - ($(".sendform").width()/2));
+
     if($(window).width() < 1260){
         $(".gallery .owl-buttons").css("display", "none");
     }
-    else if($(window).width() > 1261){
+    else if($(window).width() > 1259){
         $(".gallery .owl-buttons").css("display", "inline-block");
     }
 

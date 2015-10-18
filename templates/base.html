@@ -19,7 +19,6 @@
     </head>
 
 <body>
-
     <header id="header">
         {% include "navbar.html" %}
 
@@ -33,35 +32,28 @@
             </div>
         </div>
         <div class="tobottom">
-        <div class="">
-            <div class="">
-                <div class="">
-                <div class="sendform">
-                        <span><h1>Доставка меленої кави та кави в зернах</h1></span>
-                        <form class="form-inline">
-                            <div class="form-group col-sm-6 col-xs-6">
-                                <label class="sr-only" for="name">Ім’я</label>
-                                <input type="text" class="form-control" id="name" placeholder="Ім’я">
-                            </div>
-                            <div class="form-group col-sm-6 col-xs-6">
-                                <label class="sr-only" for="phone">Телефон</label>
-                                <input type="text" class="form-control" id="phone" placeholder="Телефон">
-                            </div>
-                        </form>
-                        <div class="formcontent">
-                            <div class="col-sm-6 col-xs-6">
-                                <button type="submit" class="btn">Замовити</button>
-                            </div>
-
-                            <div class="tel col-sm-6 col-xs-6">
-                                <span>aбо телефонуй</span>
-                                <a href=""><i class="fa fa-phone fa-1x"></i>088 123 55 88</a>
-                            </div>
-                        </div>
+            <div class="sendform">
+                <span><h1>Доставка меленої кави та кави в зернах</h1></span>
+                <form class="form-inline">
+                    <div class="form-group col-sm-6 col-xs-6">
+                        <label class="sr-only" for="name">Ім’я</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ім’я">
+                    </div>
+                    <div class="form-group col-sm-6 col-xs-6">
+                        <label class="sr-only" for="phone">Телефон</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Телефон">
+                    </div>
+                </form>
+                <div class="formcontent">
+                    <div class="col-sm-6 col-xs-6">
+                        <button type="submit" class="btn">Замовити</button>
+                    </div>
+                    <div class="tel col-sm-6 col-xs-6">
+                        <span>aбо телефонуй</span>
+                        <a href=""><i class="fa fa-phone fa-1x"></i>088 123 55 88</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        </div>
         </div>
 
     </header>
@@ -136,7 +128,7 @@
         <span id="coffeebook" style="position: relative; top: 0px; padding: 0; margin: 0;"></span>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 cl-sm-12">
+                <div class="col-md-12 cl-sm-12 col-xs-12">
                     <div class="shelf">
                         <img src="{% static "img/shelf.png" %}" class="img-responsive">
                         <h1>Кава + книга</h1>
@@ -189,23 +181,74 @@
     <section class="cups">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
                      <img src="{% static "img/coffee_cups.png" %}" class="img-responsive">
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                     <h1>Завітай до нас і отримай<br> найсмачнішу каву і приємні емоції</h1>
                 </div>
             </div>
         </div>
     </section>
-    <section class="map">
 
+    <section class="map">
+        <span id="cont" style="position: relative; top: 0; padding: 0; margin: 0;"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-5 col-xs-12">
+                    <div class="info">
+                        <div class="cl-md-12 col-sm-12 col-xs-12">
+                        <div class="contacts">
+                            <h1>Контакти</h1>
+                            <p>м. Костопіль</p>
+                            <p><i class="fa fa-map-marker"></i>вул. М. Грушевського / 21</p>
+                            <p><i class="fa fa-map-marker"></i>парк Тараса Шевченка</p>
+                            <p><i class="fa fa-phone "></i>099 123 45 67<br>067 678 45 12</p>
+                        </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="worktime">
+                            <h2>Години роботи</h2>
+                            <p><i class="fa fa-clock-o"></i>ПН-НД: 8:00 - 21:00</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-7 col-xs-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20137.559504451514!2d26.428556443174035!3d50.88310231602039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472f485004c70891%3A0x5557f0824d95eb89!2z0JrQvtGB0YLQvtC_0ZbQu9GMLCDQoNGW0LLQvdC10L3RgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1suk!2sua!4v1445160659955" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-8 pull-left">
+                    <ul class="foot_links">
+                        <li><a href="#header">Кава</a></li>
+                        <li><a href="#welcome" >Вітаю</a></li>
+                        <li><a href="#takewithyou">Візьми з собою</a></li>
+                        <li><a href="#gallery">Наші смаколики</a></li>
+                        <li><a href="#coffeebook">Новини</a></li>
+                        <li><a href="#cont">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 pull-right">
+                    <ul class="social_links">
+                        <li><a href="#"><i class="my my_d"></i></a></li>
+                        <li><a href="#"><i class="my my_h"></i></a></li>
+                        <li><a href="#"><i class="my my_b"></i></a></li>
+                        <li><a href="#"><i class="my my_f"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 {% include "loadjs.html" %}
 </body>

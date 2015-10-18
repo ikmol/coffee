@@ -41,6 +41,26 @@
     .welcome p{
         font-size: 20px;
     }
+    .map h1{
+        font-size: 26px;
+    }
+    .map h2{
+        font-size: 16px;
+    }
+    .map p{
+        font-size: 16px;
+    }
+    .map i{
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .foot_links li{
+        font-size: 12px;
+    }
+    .social_links i{
+        font-size: 30px;
+    }
+
 }
 
 /* Medium Devices, Desktops */
@@ -99,12 +119,18 @@
         font-size: 24px;
         line-height: 45px;
     }
-
+    .coffeebook{
+        min-height: 875px;
+    }
     .coffeebook .shelf > div{
         padding-top: 30px;
     }
     .coffeebook .shelf p{
         font-size: 16px;
+    }
+
+    .cups .container{
+        top: -75px;
     }
 
 }
@@ -127,13 +153,13 @@
 		left: 15px;
 	}
 
-    /*
-    .coffeebook .shelf h1{
-        font-size: 22px;
+    .info{
+        text-align: center;
     }
-    .coffeebook .shelf p{
-        font-size: 12px;
-    }*/
+    .map i{
+        position: relative;
+        left: -10px;
+    }
 
     /*   for bootstrap navbar toogle button */
     @media only screen and (max-width : 767px) {
@@ -177,6 +203,25 @@
 
 }
 
+/* my ptions*/
+@media only screen and (max-width : 700px) {
+    .coffeebook{
+        min-height: 825px;
+    }
+    .cups h1{
+        font-size: 26px;
+    }
+    .cups .container{
+        top: -75px;
+    }
+}
+
+@media only screen and (max-width : 575px) {
+    .cups .container{
+        top: -55px;
+    }
+}
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -214,7 +259,22 @@
     .gallery h1{
         font-size: 24px;
     }
-
+    .cups .container{
+        top: -15px;
+    }
+    .cups h1{
+        font-size: 22px;
+        line-height: 35px;
+    }
+    .map h1{
+        font-size: 22px;
+    }
+    .map h2{
+        font-size: 14px;
+    }
+    .map p{
+        font-size: 14px;
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -264,3 +324,4 @@
 		padding-top: 50px;
 	}
 }
+
