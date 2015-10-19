@@ -34,25 +34,37 @@
         <div class="tobottom">
             <div class="sendform">
                 <span><h1>Доставка меленої кави та кави в зернах</h1></span>
-                <form class="form-inline">
+                <form class="form-inline" method="post" action="">{% csrf_token %}
                     <div class="form-group col-sm-6 col-xs-6">
-                        <label class="sr-only" for="name">Ім’я</label>
-                        <input type="text" class="form-control" id="name" placeholder="Ім’я">
+                        {% if form.name.errors %}
+                            <style>
+                                #id_name{
+                                    border-bottom: solid 1px red;
+                                }
+                            </style>
+                        {% endif %}
+                        {{ form.name }}
                     </div>
                     <div class="form-group col-sm-6 col-xs-6">
-                        <label class="sr-only" for="phone">Телефон</label>
-                        <input type="text" class="form-control" id="phone" placeholder="Телефон">
+                        {% if form.phone.errors %}
+                            <style>
+                                #id_phone{
+                                    border-bottom: solid 1px red;
+                                }
+                            </style>
+                        {% endif %}
+                        {{ form.phone }}
+                    </div>
+                    <div class="formcontent">
+                        <div class="col-sm-6 col-xs-6">
+                            <button type="submit" class="btn">Замовити</button>
+                        </div>
+                        <div class="tel col-sm-6 col-xs-6">
+                            <span>aбо телефонуй</span>
+                            <a href=""><i class="fa fa-phone fa-1x"></i>088 123 55 88</a>
+                        </div>
                     </div>
                 </form>
-                <div class="formcontent">
-                    <div class="col-sm-6 col-xs-6">
-                        <button type="submit" class="btn">Замовити</button>
-                    </div>
-                    <div class="tel col-sm-6 col-xs-6">
-                        <span>aбо телефонуй</span>
-                        <a href=""><i class="fa fa-phone fa-1x"></i>088 123 55 88</a>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -224,7 +236,6 @@
             </div>
         </div>
     </section>
-
     <footer>
         <div class="container">
             <div class="row">

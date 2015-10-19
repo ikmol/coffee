@@ -40,6 +40,7 @@ if not settings.DEBUG:
         'django.contrib.sessions',
         'django.contrib.messages',
         'django.contrib.staticfiles',
+        'order',
     )
 
     MIDDLEWARE_CLASSES = (

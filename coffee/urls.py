@@ -20,6 +20,7 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^$', "coffee.views.home", name="home"),
+    url(r'^home/$', include("order.urls")),
     url(r'^admin/', include(admin.site.urls)),
 ]
 
