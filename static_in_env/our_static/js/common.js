@@ -46,13 +46,13 @@ $(document).ready(function(){
 function sendOrder(){
     function block_form() {
         $("#loading").show();
-        $('textarea').attr('disabled', 'disabled');
+       // $('textarea').attr('disabled', 'disabled');
         $('input').attr('disabled', 'disabled');
     }
 
     function unblock_form() {
         $('#loading').hide();
-        $('textarea').removeAttr('disabled');
+        //$('textarea').removeAttr('disabled');
         $('input').removeAttr('disabled');
         $('.errorlist').remove();
     }
@@ -66,24 +66,24 @@ function sendOrder(){
         success: function() {
             unblock_form();
             $("#form_ajax").show();
-            $("#id_name").val("");
-            $("#id_phone").val("");
+            $("#id_name, #id_phone").css("border-bottom", "solid 1px #3A9400");
             setTimeout(function() {
                 $("#form_ajax").hide();
-            }, 5000);
+                $("#id_name, #id_phone").val("").css("border-bottom", "solid 1px #8f735a");
+            }, 2000);
         },
         error:  function(resp) {
             unblock_form();
-            $("#form_ajax_error").show();
             // render errors in form fields
             var errors = JSON.parse(resp.responseText);
             for (error in errors) {
                 var id = '#id_' + error;
-                $(id).parent('p').prepend(errors[error]);
+            //    $(id).parent('p').prepend(errors[error]);
+                $(id).css("border-bottom", "solid 1px red");
             }
             setTimeout(function() {
-                $("#form_ajax_error").hide();
-            }, 5000);
+                /*$("#id_name, #id_phone").css("border-bottom", "solid 1px #8f735a");*/
+            }, 2000);
         }
     };
 
@@ -106,6 +106,8 @@ $(window).resize(function(){
 function wResize(){
     $("header").css("height", $(window).height());
     $(".tobottom").css("left", ($(window).width()/2) - ($(".sendform").width()/2));
+    $("#loading").css("left", ($(".sendform").width()/2) - ($("#loading").width()/2));
+    $("#form_ajax").css("left", ($(".sendform").width()/2) - ($("#form_ajax").width()/2));
 
     if($(window).width() < 1260){
         $(".gallery .owl-buttons").css("display", "none");

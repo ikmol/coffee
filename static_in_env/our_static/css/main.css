@@ -173,6 +173,20 @@ header .tobottom{
 	font-family: "MuseoSansCyrl300", sans-serif;
     font-size: 18px;
 }
+
+#loading{
+	position: absolute;
+}
+#loading > i{
+	color: #8f735a;
+}
+#form_ajax{
+	position: absolute;
+}
+#form_ajax > i{
+	color: #3A9400;
+}
+
 /* section welcome*/
 .welcome{
 	min-height: 450px;

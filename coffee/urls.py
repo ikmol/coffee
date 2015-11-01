@@ -21,7 +21,6 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^$', include("order.urls")),
-    url(r'^test/$', "coffee.views.test", name="test"),
     url(r'^admin/', include(admin.site.urls)),
 ]
 
