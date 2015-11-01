@@ -9,7 +9,7 @@ $(document).ready(function(){
 		//Если мобильние девайсы
 	}
 
-    //hover for socizl links
+    //hover for social links
     socialHover("my_b", "my_a");
     socialHover("my_d", "my_c");
     socialHover("my_f", "my_e");
