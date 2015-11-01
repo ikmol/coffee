@@ -9,4 +9,3 @@ except:
 
 if live:
     from .production import *
-    settings.DEBUG = False
