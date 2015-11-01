@@ -2,33 +2,86 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	.sendform .formcontent .tel a > i {
+    header .row{
+        margin: 0 !important;
+    }
+    .sendform .formcontent .tel a > i {
 		top: 30px;
 		left: 35px;
 		font-size: 28px;
 	}
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
 	.sendform h1 {
 		font-size: 14px;
 		margin: 10px;
 	}
+    .sendform .formcontent button {
+        font-family: "MuseoSansCyrl700", sans-serif;
+		font-size: 16px;
+		line-height: 40px;
+	}
+	.sendform .formcontent .tel a > i {
+		top: 35px;
+		left: 17px;
+		font-size: 22px;
+	}
+
+    .coffeebook .shelf > div{
+        padding-top: 45px;
+    }
+    .coffeebook .shelf p{
+        font-size: 20px;
+    }
+    .welcome {
+        min-height: 400px;
+    }
+
+    .welcome h3{
+        font-size: 26px;
+    }
+    .welcome p{
+        font-size: 20px;
+    }
+    .map h1{
+        font-size: 26px;
+    }
+    .map h2{
+        font-size: 16px;
+    }
+    .map p{
+        font-size: 16px;
+    }
+    .map i{
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .foot_links li{
+        font-size: 12px;
+    }
+    .social_links i{
+        font-size: 30px;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    header .row{
+        margin: 0 !important;
+    }
+
+    .sendform{
+        height: 160px;
+    }
+
 	.sendform .formcontent > div,
 	.sendform .form-inline .form-group {
 		padding: 10px;
 	}
-	.sendform .formcontent button {
-		font-size: 16px;
-		font-weight: 500;
-		line-height: 40px;
+    .sendform .formcontent .tel a > i {
+		top: 29px;
+		left: 17px;
 	}
-	.sendform .formcontent .tel a > i {
-		top: 25px;
-		left: 20px;
-		font-size: 24px;
-	}
+
 	.sendform .formcontent .tel > a {
 		font-size: 16px;
 	}
@@ -39,26 +92,92 @@
 		font-size: 20px;
 		line-height: 12px;
 	}
+    /*end header*/
+
+    .welcome .container{
+        padding-bottom: 75px;
+    }
+    .welcome .container .row > div > h3{
+        padding-top: 0;
+    }
+    .welcome .container .row > div > p{
+        padding-bottom: 20px;
+    }
+
+    .takewithyou .cup_shad h1{
+        font-size: 24px;
+    }
+    .takewithyou .cup_shad ul{
+        font-size: 18px;
+        padding: 20px 0;
+    }
+    .takewithyou .cup_shad li{
+        padding-left: 50px;
+    }
+
+    .takewithyou .cup_shad i{
+        font-size: 24px;
+        line-height: 45px;
+    }
+    .coffeebook{
+        min-height: 875px;
+    }
+    .coffeebook .shelf > div{
+        padding-top: 30px;
+    }
+    .coffeebook .shelf p{
+        font-size: 16px;
+    }
+
+    .cups .container{
+        top: -75px;
+    }
+
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    .welcome h3 {
+        font-size: 24px;
+    }
 
+    .welcome p {
+        font-size: 18px;
+    }
+    .sendform .form-group {
+        margin-bottom: 0;
+    }
+    .navbar-bar{
+        display: none !important;
+    }
 	.sendform .formcontent .tel a > i {
-		left: 10px;
+		left: 15px;
 	}
 
-	.navbar-default .navbar-collapse{
-		background: rgba(0, 0, 0, .9);
-		text-align: center;
-	}
+    .info{
+        text-align: center;
+    }
+    .map i{
+        position: relative;
+        left: -10px;
+    }
 
-	.navbar-default .navbar-nav>li>a{
-		font-size: 14px;
-	}
-	.navbar-default .navbar-nav>li>a>i{
-		font-size: 45px;
-		line-height: 16px;
-	}
+    /*   for bootstrap navbar toogle button */
+    @media only screen and (max-width : 767px) {
+        .navbar-default .navbar-collapse {
+            background: rgba(0, 0, 0, .9);
+            text-align: center;
+        }
+
+        .navbar-default .navbar-nav > li > a {
+            font-size: 14px;
+        }
+
+        .navbar-default .navbar-nav > li > a > i {
+            font-size: 45px;
+            line-height: 16px;
+        }
+
+    }
 
 	/*Disable Animation on Mobile Devices*/
 	.animated {
@@ -84,11 +203,78 @@
 
 }
 
+/* my ptions*/
+@media only screen and (max-width : 700px) {
+    .coffeebook{
+        min-height: 825px;
+    }
+    .cups h1{
+        font-size: 26px;
+    }
+    .cups .container{
+        top: -75px;
+    }
+}
+
+@media only screen and (max-width : 575px) {
+    .cups .container{
+        top: -55px;
+    }
+}
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	header{
 		min-height: 350px;
 	}
+    .sendform .formcontent .tel a > i {
+		left: 8px;
+	}
+    .welcome h3{
+        font-size: 20px;
+    }
+    .welcome p{
+        font-size: 14px;
+    }
+    .takewithyou{
+        min-height: 350px;
+    }
+
+    .takewithyou .cup_shad h1{
+        font-size: 14px;
+    }
+    .takewithyou .cup_shad ul{
+        font-size: 12px;
+    }
+    .takewithyou .cup_shad li{
+        padding-left: 30px;
+        line-height: 15px;
+    }
+
+    .takewithyou .cup_shad i{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .gallery h1{
+        font-size: 24px;
+    }
+    .cups .container{
+        top: -15px;
+    }
+    .cups h1{
+        font-size: 22px;
+        line-height: 35px;
+    }
+    .map h1{
+        font-size: 22px;
+    }
+    .map h2{
+        font-size: 14px;
+    }
+    .map p{
+        font-size: 14px;
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -138,3 +324,4 @@
 		padding-top: 50px;
 	}
 }
+

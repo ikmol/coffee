@@ -1,10 +1,22 @@
 body{
 	font-size: 16px;
 	line-height: 1.6;
-	font-family: "museo_sans_cyrl300", sans-serif;
+	font-family: "MuseoSansCyrl300", sans-serif;
 }
 
 /* header section */
+
+/* style for bg video player*/
+.mbYTP_wrapper::before {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,.6);
+	z-index: 10;
+}
+
 header{
 	background: url("/static/img/head_bg.jpg") no-repeat;
 	background-position: top center;
@@ -15,27 +27,29 @@ header{
 	min-height: 640px;
 	padding-top: 45px;
 	position: relative;
+	margin: 0 !important;
 }
 
+header .row{
+	margin: 0 !important;
+}
 header > .container{
     padding: 0 !important;
 }
-header .form{
+header .tobottom{
     position: absolute;
     bottom: 0;
-    left: 0;
 }
 
 .navbar-default{
     /*background: transparent none repeat;*/
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .8);
     border: none;
     box-shadow: none;
-	font-family: "museo_sans_cyrl300", sans-serif;
-	font-weight: 300;
 }
+
 .navbar-default .navbar-nav>li>a{
-    /*margin: 0 6px;*/
+	font-family: "MuseoSansCyrl300", sans-serif;
     line-height: 40px;
     font-size: 14px;
     text-transform: uppercase;
@@ -54,12 +68,9 @@ header .form{
 .navbar-default .navbar-nav>li>a>i:hover{
 	color: #ffffff;
 }
-
-
 .navbar-toggle{
     border-radius: 0 !important;
 }
-
 .navbar-default .navbar-toggle{
     color: #FFFFFF !important;
 }
@@ -70,7 +81,6 @@ header .form{
 .navbar-default .navbar-toggle:focus{
 	background-color: transparent !important;
 }
-
 .navbar-default .navbar-toggle .icon-bar{
     color: #FFFFFF !important;
     border-color: #FFFFFF !important;
@@ -79,8 +89,6 @@ header .form{
 .logo{
 	padding-top: 220px;
 }
-
-
 .sendform{
     color: #FFFFFF;
     height: 180px;
@@ -91,12 +99,10 @@ header .form{
     padding: 0 !important;
 }
 .sendform h1{
-
+	font-family: "MuseoSansCyrl300", sans-serif;
     text-transform: uppercase;
     font-size: 18px;
     margin: 15px;
-	font-family: "museo_sans_cyrl300", sans-serif;
-	font-weight: 300;
 }
 .sendform > span{
     display: inline-block;
@@ -106,8 +112,8 @@ header .form{
     width: 100%;
     line-height: 40px;
 }
-
 .sendform .form-inline .form-control{
+	font-family: "MuseoSansCyrl100", sans-serif;
     width: 100%;
     border-radius: 0;
     background: transparent;
@@ -127,20 +133,18 @@ header .form{
 .sendform .form-inline .form-control::-moz-placeholder          {color:#8f735a;}/* Firefox 19+ */
 .sendform .form-inline .form-control:-moz-placeholder           {color:#8f735a;}/* Firefox 18- */
 .sendform .form-inline .form-control:-ms-input-placeholder      {color:#8f735a;}
-
-
 .sendform .form-inline .form-group,
 .sendform .formcontent > div{
     padding: 15px;
 }
 .sendform .formcontent button{
+	font-family: "MuseoSansCyrl700", sans-serif;
     background: transparent;
     border: solid 1px #FFFFFF;
     text-transform: uppercase;
     border-radius: 0;
     box-shadow: none;
     width: 100%;
-
     font-size: 18px;
     font-weight: 700;
     padding: 0;
@@ -151,44 +155,41 @@ header .form{
     border: none;
     color: #FFFFFF;
 }
-
 .sendform .formcontent .tel > span{
     display: block;
+	font-family: "MuseoSansCyrl100", sans-serif;
     font-size: 11px;
     color: #8f735a;
 }
 .sendform .formcontent .tel a > i {
     position: absolute;
     top: 30px;
-    left: 55px;
+    left: 17px;
     font-size: 28px;
 }
-
 .sendform .formcontent .tel > a {
     text-decoration: none;
     color: #FFFFFF;
+	font-family: "MuseoSansCyrl300", sans-serif;
     font-size: 18px;
 }
-
 /* section welcome*/
 .welcome{
-	min-height: 515px;
+	min-height: 450px;
 	text-align: center;
 	padding-top: 75px;
 }
-
+.welcome .container .row > div > h3{
+	padding-top: 25px;
+}
 .welcome h3{
+	font-family: "MuseoSansCyrl300", sans-serif;
 	font-size: 30px;
-	font-weight: bold;
+	text-transform: uppercase;
 }
 .welcome p{
-	font-size: 30px;
-	font-weight: 100;
-}
-.welcome img{
-	width: 303px;
-	height: 342px;
-	padding-right: 25px;
+	font-family: "MuseoSansCyrl100", sans-serif;
+	font-size: 24px;
 }
  /*section takewithyou*/
 .takewithyou{
@@ -199,29 +200,32 @@ header .form{
 	-o-background-size: cover;
 	background-size: cover;
 	min-height: 769px;
-
 	font-size: 26px;
 }
-.takewithyou h2{
+.takewithyou .cup_shad h1{
+	font-family: "MuseoSansCyrl500", sans-serif;
+	font-size: 30px;
 	text-transform: uppercase;
 	padding-top: 10px;
 }
-.takewithyou ul{
+.takewithyou .cup_shad ul{
+	font-family: "MuseoSansCyrl100", sans-serif;
+	font-size: 26px;
 	margin: 0;
-	padding: 48px 0;
+	padding: 40px 0;
 }
 .takewithyou .cup_shad{
 	padding-top: 13px;
 }
-.takewithyou li{
+.takewithyou .cup_shad li{
 	font-weight: 100;
 	list-style: none;
 	line-height: 40px;
 	position: relative;
-	padding-left: 60px;
+	padding-left: 70px;
 	padding-bottom: 20px;
 }
-.cup_shad i{
+.takewithyou .cup_shad i{
 	font-size: 32px;
 	line-height: 45px;
 	color: #693c1d;
@@ -238,17 +242,18 @@ header .form{
 	font-size: 30px;
 	text-transform: uppercase;
 	padding: 30px 0 35px 0;
+	font-family: "MuseoSansCyrl500", sans-serif;
 }
-
 #owl-demo .item{
   display: block;
   padding: 0 15px 0 15px;
 
 }
 #owl-demo .item img{
-  display: block;
-  width: 350px;
-  height: 350px;
+	display: block;
+}
+.owl-item .item{
+	padding: 15px !important;
 }
 
 .owl-theme .owl-buttons i{
@@ -260,70 +265,247 @@ header .form{
 .owl-theme .owl-controls{
 	margin: 0;
 	padding-top: 20px;
-
 }
-
 .owl-theme .owl-controls .owl-buttons div {
 	position: absolute;
 	opacity: 1;
 	background-color: #FFFFFF;
 	padding: 5px 9px;
 }
-
+.owl-theme .owl-buttons i{
+	font-size: 32px !important;
+	color: #8f735a;
+}
 .owl-theme .owl-controls .owl-buttons .owl-prev{
-	left: -65px;
-	top: 150px;
+	left: -55px;
+	top: 155px;
+	background-color: transparent !important;
 }
-
 .owl-theme .owl-controls .owl-buttons .owl-next{
-	right: -65px;
-	top: 150px;
+	right: -50px;
+	top: 155px;
+	background-color: transparent !important;
 }
-.owl-theme .owl-controls .owl-page.active span{
-	background-color: #693c1d;
+.gallery .owl-theme .owl-controls .owl-page span{
+	height: 12px;
+    width: 12px;
+	border-radius: 12px;
+	background-color: transparent;
+	opacity: 1 !important;
+	border-top: 1px solid #8f735a;
+    border-left: 1px solid #8f735a;
+    border-right: 1px solid #8f735a;
+    border-bottom: 1px solid #8f735a;
+	margin: 5px 15px 5px 15px;
 }
-.owl-theme .owl-controls .owl-page span{
-	background-color: #693c1d;
-	zoom: 1.3;
+.gallery .owl-theme .owl-controls .owl-page.active span{
+	background-color: #8f735a;
+	border: none;
 }
-
-
 /* section coffe book */
 .coffeebook{
-	background: url("/static/img/coffeebook_bg.jpg") no-repeat;
+	background: url("/static/img/coffeebook_bg.jpg") no-repeat top center fixed;
 	background-position: top center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	min-height: 770px;
+	min-height: 815px;
 	font-size: 26px;
-
-
 }
-
 .coffeebook .shelf{
-	background: url("/static/img/shelf.png") no-repeat;
+/*	background: url("/static/img/shelf.png") no-repeat;
 	background-position: center;
-
 	position: relative;
 	z-index: 10;
+	top: 75px;*/
 	min-height: 214px;
 	text-align: center;
-	top: 75px;
 	margin: 0;
 	padding: 0;
+	padding-top: 80px;
+}
+
+.coffeebook .shelf img{
+	position: absolute;
+	top: 150px;
+	left: 0;
 }
 .coffeebook .shelf h1{
+	font-family: "MuseoSansCyrl500", sans-serif;
 	text-transform: uppercase;
 	font-size: 30px;
 	color: #8f735a;
 }
 .coffeebook .shelf > div{
-	padding-top: 30px;
+	padding-top: 70px;
 }
 .coffeebook .shelf p{
+	font-family: "MuseoSansCyrl100", sans-serif;
 	display: inline-block;
 	color: #FFFFFF;
 	font-size: 24px;
 }
+.coffeebook .postbook{
+		padding-top: 70px;
+}
+.coffeebook .infoblock{
+	display: block;
+	min-height: 205px;
+	color: #8f735a;
+}
+.coffeebook .col-md-3,
+.coffeebook .col-sm-6,
+.coffeebook .col-xs-6{
+	padding-bottom: 15px;
+}
+.coffeebook .infoblock span{
+	display: inline-block;
+	background: transparent;
+	border: 2px solid #8f735a;
+	color: #8f735a;
+	font-family: "MuseoSansCyrl500", sans-serif;
+	font-size: 18px;
+	width: 100%;
+	line-height: 40px;
+	text-align: center;
+}
+.coffeebook .infoblock p{
+	padding-top: 20px;
+	font-family: "MuseoSansCyrl100", sans-serif;
+	font-size: 14px;
+	text-align: center;
+	color: #FFFFFF;
+
+}
+.coffeebook .infoblock.active{
+	display: block;
+	min-height: 205px;
+	color: #FFFFFF;
+	background-color: #8f735a;
+	cursor: pointer;
+}
+.coffeebook .infoblock.active span{
+	color: #FFFFFF;
+}
+/* section cups*/
+.cups{
+	min-height: 550px;
+	text-align: center;
+}
+.cups h1{
+	font-family: "MuseoSansCyrl500", sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 48px;
+	padding-top: 85px;
+}
+.cups .container{
+	position: relative;
+	top: -125px;
+	z-index: 15;
+}
+/*section map*/
+
+.map{
+	min-height: 500px;
+	background: #8f735a;
+	text-align: left;
+}
+.map .row div{
+	padding: 0;
+
+}
+
+.map iframe{
+	pointer-events: none;
+}
+.map .info{
+	padding: 50px 70px !important;
+}
+.map .contacts{
+	padding-bottom: 20px !important;
+}
+.map .worktime{
+
+}
+.map h1{
+	font-family: "MuseoSansCyrl500", sans-serif;
+	font-size: 30px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+.map h2{
+	font-family: "MuseoSansCyrl500", sans-serif;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+}
+.map p{
+	font-family: "MuseoSansCyrl100", sans-serif;
+	font-size: 20px;
+	color: #2e1a13;
+}
+.map p:nth-child(2){
+	font-family: "MuseoSansCyrl300", sans-serif;
+}
+.map i{
+	position: absolute;
+	color: #2e1a13;
+	left: -30px;
+	font-size: 25px;
+	line-height: 30px;
+}
+
+/* footer */
+footer{
+	background: #2e1a13;
+	min-height: 75px;
+	color: #8F735A !important;
+}
+footer .container{
+	padding-top: 15px;
+}
+.foot_links,
+.social_links{
+	padding: 0;
+	margin: 0;
+}
+.foot_links li{
+	font-family: "MuseoSansCyrl300", sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	list-style: none;
+	color: #8f735a !important;
+	display: block;
+	line-height: 45px;
+	padding: 0 15px 0 15px;
+	float: left;
+}
+.social_links li{
+	font-size: 14px;
+	color: #7b6550 !important;
+	display: block;
+	line-height: 25px;
+	padding: 0 15px 0 15px;
+	float: left;
+}
+.social_links i{
+	font-size: 36px;
+	color: #7b6550;
+}
+.foot_links a{
+	text-decoration: none;
+	color: #7b6550;
+}
+.foot_links a:hover,
+.social_links i:hover{
+	color: #FFFFFF;
+}
+.social_links i{
+	color: #7b6550;
+}
+

@@ -1,6 +1,13 @@
 $(document).ready(function(){
+
     // header resizer
     wResize();
+
+    if (!device.tablet() && !device.mobile()) {
+		$(".player").mb_YTPlayer();
+	} else {
+		//Если мобильние девайсы
+	}
 
     //hover for socizl links
     socialHover("my_b", "my_a");
@@ -14,12 +21,82 @@ $(document).ready(function(){
         navigationText: [
             "<i class='my my_j'></i>",
             "<i class='my my_k'></i>"
-            ]
+            ],
+        itemsMobile: [479, 2],
+        autoHeight: true,
+        lazyLoad : true
     });
 
+    $(".infoblock").hover(
+        function(){
+            $(this).addClass("active");
+        },
+        function(){
+            $(this).removeClass("active");
+        }
+    );
 
+
+    /* ajax form */
+    sendOrder();
 
 });
+
+
+function sendOrder(){
+    function block_form() {
+        $("#loading").show();
+        $('textarea').attr('disabled', 'disabled');
+        $('input').attr('disabled', 'disabled');
+    }
+
+    function unblock_form() {
+        $('#loading').hide();
+        $('textarea').removeAttr('disabled');
+        $('input').removeAttr('disabled');
+        $('.errorlist').remove();
+    }
+
+    // prepare Options Object for plugin
+    var options = {
+        beforeSubmit: function(form, options) {
+            // return false to cancel submit
+            block_form();
+        },
+        success: function() {
+            unblock_form();
+            $("#form_ajax").show();
+            $("#id_name").val("");
+            $("#id_phone").val("");
+            setTimeout(function() {
+                $("#form_ajax").hide();
+            }, 5000);
+        },
+        error:  function(resp) {
+            unblock_form();
+            $("#form_ajax_error").show();
+            // render errors in form fields
+            var errors = JSON.parse(resp.responseText);
+            for (error in errors) {
+                var id = '#id_' + error;
+                $(id).parent('p').prepend(errors[error]);
+            }
+            setTimeout(function() {
+                $("#form_ajax_error").hide();
+            }, 5000);
+        }
+    };
+
+    $('#ajaxform').ajaxForm(options);
+
+}
+
+
+String.prototype.trimToLength = function(m) {
+      return (this.length > m)
+        ? jQuery.trim(this).substring(0, m).split(" ").slice(0, -1).join(" ") + "..."
+        : this;
+    };
 
 $(window).resize(function(){
     wResize();
@@ -28,13 +105,51 @@ $(window).resize(function(){
 //resize header for device
 function wResize(){
     $("header").css("height", $(window).height());
+    $(".tobottom").css("left", ($(window).width()/2) - ($(".sendform").width()/2));
 
-    if($(window).width() > 1200)
-        $(".form").css("left", ($(window).width()/2) - ($(".sendform").width()+35));
-    else if($(window).width() < 1200 && $(window).width() > 771)
-        $(".form").css("left", ($(window).width()/2) - ($(".sendform").width()+15));
-    else if($(window).width() < 770)
-        $(".form").css("left", ($(window).width()/2) - ($(".sendform").width()/2));
+    if($(window).width() < 1260){
+        $(".gallery .owl-buttons").css("display", "none");
+    }
+    else if($(window).width() > 1259){
+        $(".gallery .owl-buttons").css("display", "inline-block");
+    }
+
+
+    if($(window).width() > 700) {
+        if ($("#mainnews").text().length > 125) {
+            $("#mainnews").text($("#mainnews").text().trimToLength(125));
+        }
+    }
+
+    if($(window).width() < 700) {
+        $(".shelf div").removeClass("col-xs-6 col-xs-offset-3");
+        $(".shelf img").css("display", "none");
+    }
+    else{
+        $(".shelf img").css("display", "block");
+        $(".shelf div").addClass("col-xs-6 col-xs-offset-3");
+    }
+    if($(window).width() < 480) {
+        $("#blocknews1").removeClass("col-xs-6");
+        $("#blocknews1").addClass("col-xs-12");
+        $("#blocknews2").removeClass("col-xs-6");
+        $("#blocknews2").addClass("col-xs-12");
+        $("#blocknews3").removeClass("col-xs-6");
+        $("#blocknews3").addClass("col-xs-12");
+        $("#blocknews4").removeClass("col-xs-6");
+        $("#blocknews4").addClass("col-xs-12");
+    }
+    else{
+        $("#blocknews1").removeClass("col-xs-12");
+        $("#blocknews1").addClass("col-xs-6");
+        $("#blocknews2").removeClass("col-xs-12");
+        $("#blocknews2").addClass("col-xs-6");
+        $("#blocknews3").removeClass("col-xs-12");
+        $("#blocknews3").addClass("col-xs-6");
+        $("#blocknews4").removeClass("col-xs-12");
+        $("#blocknews4").addClass("col-xs-6");
+    }
+
 }
 
 function socialHover(p1, p2){

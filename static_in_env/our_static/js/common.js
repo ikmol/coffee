@@ -1,6 +1,13 @@
 $(document).ready(function(){
+
     // header resizer
     wResize();
+
+    if (!device.tablet() && !device.mobile()) {
+		$(".player").mb_YTPlayer();
+	} else {
+		//Если мобильние девайсы
+	}
 
     //hover for socizl links
     socialHover("my_b", "my_a");
@@ -30,7 +37,60 @@ $(document).ready(function(){
     );
 
 
+    /* ajax form */
+    sendOrder();
+
 });
+
+
+function sendOrder(){
+    function block_form() {
+        $("#loading").show();
+        $('textarea').attr('disabled', 'disabled');
+        $('input').attr('disabled', 'disabled');
+    }
+
+    function unblock_form() {
+        $('#loading').hide();
+        $('textarea').removeAttr('disabled');
+        $('input').removeAttr('disabled');
+        $('.errorlist').remove();
+    }
+
+    // prepare Options Object for plugin
+    var options = {
+        beforeSubmit: function(form, options) {
+            // return false to cancel submit
+            block_form();
+        },
+        success: function() {
+            unblock_form();
+            $("#form_ajax").show();
+            $("#id_name").val("");
+            $("#id_phone").val("");
+            setTimeout(function() {
+                $("#form_ajax").hide();
+            }, 5000);
+        },
+        error:  function(resp) {
+            unblock_form();
+            $("#form_ajax_error").show();
+            // render errors in form fields
+            var errors = JSON.parse(resp.responseText);
+            for (error in errors) {
+                var id = '#id_' + error;
+                $(id).parent('p').prepend(errors[error]);
+            }
+            setTimeout(function() {
+                $("#form_ajax_error").hide();
+            }, 5000);
+        }
+    };
+
+    $('#ajaxform').ajaxForm(options);
+
+}
+
 
 String.prototype.trimToLength = function(m) {
       return (this.length > m)

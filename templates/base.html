@@ -21,7 +21,17 @@
 <body>
     <header id="header">
         {% include "navbar.html" %}
-
+        <div id="bgndVideo" class="player"
+			data-property="{
+			videoURL:'https://www.youtube.com/watch?v=wCRtBYD2GjM',
+			containment:'header',
+			autoPlay:true,
+			mute:true,
+			startAt:0,
+			opacity:1,
+			showControls : false
+			}">
+		</div>
         <div class="container">
             <div class="row">
                 <div class="logo">
@@ -67,7 +77,6 @@
                 </form>
             </div>
         </div>
-
     </header>
 
     <section class="welcome">

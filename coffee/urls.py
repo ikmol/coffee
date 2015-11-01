@@ -18,9 +18,10 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from django.conf import settings
 
+
 urlpatterns = [
-    url(r'^$', "coffee.views.home", name="home"),
-    url(r'^home/$', include("order.urls")),
+    url(r'^$', include("order.urls")),
+    url(r'^test/$', "coffee.views.test", name="test"),
     url(r'^admin/', include(admin.site.urls)),
 ]
 

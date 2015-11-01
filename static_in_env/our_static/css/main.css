@@ -5,6 +5,18 @@ body{
 }
 
 /* header section */
+
+/* style for bg video player*/
+.mbYTP_wrapper::before {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,.6);
+	z-index: 10;
+}
+
 header{
 	background: url("/static/img/head_bg.jpg") no-repeat;
 	background-position: top center;
