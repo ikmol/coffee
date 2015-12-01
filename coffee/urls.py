@@ -21,6 +21,7 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^$', include("order.urls")),
+    url(r'^blog/', include("blognews.urls")),
     url(r'^admin/', include(admin.site.urls)),
 ]
 

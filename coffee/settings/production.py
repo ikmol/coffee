@@ -41,6 +41,7 @@ if not settings.DEBUG:
         'django.contrib.messages',
         'django.contrib.staticfiles',
         'order',
+        'blognews',
     )
 
     MIDDLEWARE_CLASSES = (

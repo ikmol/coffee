@@ -6,7 +6,7 @@ from .forms import OrderForm
 
 
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ["__str__", "name", "timestamp",]
+    list_display = ["__str__", "phone", "timestamp",]
     form = OrderForm
 
 admin.site.register(Order, OrderAdmin)
